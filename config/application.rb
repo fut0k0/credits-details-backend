@@ -34,6 +34,6 @@ module CreditsDetailsBackend
     
     # Add back middleware for session and cookies.
     config.middleware.use ActionDispatch::Cookies
-    config.middleware.use ActionDispatch:Session::CookieStore, key: '_session', expire_after: 2.days, httponly: true
+    config.middleware.use ActionDispatch::Session::CookieStore, key: '_session', expire_after: 2.days, httponly: true
   end
 end
