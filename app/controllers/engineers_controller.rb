@@ -1,2 +1,0 @@
-class EngineersController < ApplicationController
-end
