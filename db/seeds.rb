@@ -30,7 +30,7 @@ p4 = Producer.create(name: "Butch Vig")
 p5 = Producer.create(name: "Terry Date")
 
 m1 = Mixer.create(name: "Tony Visconti")
-m2 = Mixer.create(name: "(N/A")
+m2 = Mixer.create(name: "(N/A)")
 m3 = Mixer.create(name: "Andy Wallace")
 m4 = Mixer.create(name: "Ron St. Germain")
 
