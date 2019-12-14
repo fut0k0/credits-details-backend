@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 			resources :genres
 			resources :years
 			resources :users
-			
+
 			post "login", to: "sessions#create"
 			post "signup", to: "users#create"
 		end
