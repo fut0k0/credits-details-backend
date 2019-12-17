@@ -4,8 +4,10 @@ class Api::V1::UsersController < ApplicationController
 	end
 
 	def create
+		user = User.new(user_params)
+		user.save
+		error = user.errors.details[:username] if user.errors[:username].any?
 		byebug
-		user = User.create(user_params)
 	end
 
 	private
