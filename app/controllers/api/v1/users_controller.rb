@@ -10,6 +10,7 @@ class Api::V1::UsersController < ApplicationController
 		if !user.errors.any?
 			session[:current_user_id] = user.id
 		end
+		binding.pry
 	end
 
 	private
