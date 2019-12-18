@@ -4,13 +4,14 @@ class Api::V1::UsersController < ApplicationController
 	end
 
 	def create
-		user = User.new(user_params)
-		user.save
-		error = user.errors.details if user.errors.any?
+		user = User.create(user_params)
+
 		if !user.errors.any?
 			session[:current_user_id] = user.id
+			render json: user
+		else
+			render json: user.errors.messages
 		end
-		binding.pry
 	end
 
 	private
