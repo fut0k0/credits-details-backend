@@ -11,4 +11,9 @@ class Api::V1::SessionsController < ApplicationController
 			render json: {message: "Account not found"}
 		end
 	end
+
+	def destroy
+		reset_session
+		render json: {message: "Logout complete"}
+	end
 end
