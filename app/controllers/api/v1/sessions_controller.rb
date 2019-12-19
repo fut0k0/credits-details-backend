@@ -1,11 +1,11 @@
 class Api::V1::SessionsController < ApplicationController
 	def create
-		current_user = User.find_by(username: params[:session][:username])
+		user = User.find_by(username: params[:session][:username])
 
-		if current_user && current_user.authenticate(params[:session][:password])
-			session[:current_user_id] = current_user.id
-			render json: current_user
-		elsif current_user
+		if user && user.authenticate(params[:session][:password])
+			session[:current_user_id] = user.id
+			render json: user
+		elsif user
 			render json: {message: "Incorrect password"}
 		else
 			render json: {message: "Account not found"}
@@ -14,6 +14,14 @@ class Api::V1::SessionsController < ApplicationController
 
 	def destroy
 		reset_session
-		render json: {message: "Logout complete"}
+		render json: {message: "Account logged out"}
+	end
+
+	def get_current_user
+		if is_logged_in
+			render json: current_user
+		else
+			render json: {message: "No account logged in"}
+		end
 	end
 end
