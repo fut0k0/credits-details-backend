@@ -9,8 +9,10 @@ class Api::V1::UsersController < ApplicationController
 		if !user.errors.any?
 			session[:current_user_id] = user.id
 			render json: user
+		elsif user.errors.messages[:username][0] = "has already been taken"
+			render json: {message: "Username taken"}
 		else
-			render json: user.errors.messages
+			render json: {message: "Error occurred"}
 		end
 	end
 
