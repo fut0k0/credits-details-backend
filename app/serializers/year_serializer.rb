@@ -1,3 +1,3 @@
 class YearSerializer < ActiveModel::Serializer
-  attributes :id, :release_year
+  attributes :id, :name
 end

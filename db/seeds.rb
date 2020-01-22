@@ -9,12 +9,12 @@
 u1 = User.create(username: "tim", password: "tim")
 u2 = User.create(username: "sue", password: "sue")
 
-y1 = Year.create(release_year: 1977)
-y2 = Year.create(release_year: 1971)
-y3 = Year.create(release_year: 1991)
-y4 = Year.create(release_year: 1989)
-y5 = Year.create(release_year: 1988)
-y6 = Year.create(release_year: 2018)
+y1 = Year.create(name: "1977")
+y2 = Year.create(name: "1971")
+y3 = Year.create(name: "1991")
+y4 = Year.create(name: "1989")
+y5 = Year.create(name: "1988")
+y6 = Year.create(name: "2018")
 
 g1 = Genre.create(name: "Rock")
 g2 = Genre.create(name: "Glam")
