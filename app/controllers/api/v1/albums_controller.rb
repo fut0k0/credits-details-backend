@@ -6,8 +6,6 @@ class Api::V1::AlbumsController < ApplicationController
 	def create
 		album = Album.create(album_params)
 
-byebug
-
 		if !album.errors.any?
 			render json: album
 		else
