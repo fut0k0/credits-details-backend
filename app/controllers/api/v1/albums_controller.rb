@@ -13,6 +13,11 @@ class Api::V1::AlbumsController < ApplicationController
 		end
 	end
 
+	def destroy
+		Album.find(params[:id]).destroy
+		render json: {message: "Album deleted"}
+	end
+
 	private
 
 		def album_params
