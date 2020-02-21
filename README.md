@@ -1,9 +1,8 @@
-# Flatiron School React Redux Portfolio Project
-
-----
-## Background Information
+# Drill Credits & Details
 
 This application was built for Flatiron School's React Redux portfolio project. This repository is the back end. The front end is [here](http://github.com/fut0k0/credits-details-frontend).
+
+## Project Requirements
 
 Some basic requirements for the project included:
 
@@ -12,36 +11,31 @@ Some basic requirements for the project included:
 * Rails API for data persistence
 * react-router with 3 routes
 * async actions
+* fetch
 
-----
-## Details
+## Gems & Versions
 
 The back end was made using:
 
-* 
+* ruby 2.6.1
+* rails 5.2.4
+* bcrypt 3.1.13
+* active\_model\_serializers 0.10.10
+* rack-cors 1.1.0
+* sqlite3 1.4.1
 
+## Installation
 
-# README
+Download this repository. Run `bundle install`. Run `rails db:reset`. Run `rails s`. Next, set up the [front end](http://github.com/fut0k0/credits-details-frontend).
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Intent & Use
 
-Things you may want to cover:
+The intent of this application is to view an album collection by custom combinations of credits and details. Drill into a collection by artist, producer, mixer, etc. Look for commonalities, and quickly find albums that meet different criteria. View large collections in unique ways.
 
-* Ruby version
+For example, how many David Bowie albums do I have? Which Grunge records from 1991 do I have? Which Rock albums were produced by Tony Visconti? Of those, which ones did Tony Visconti also mix? Are any of those David Bowie albums?
 
-* System dependencies
+To use the application, simply create an account. The info page has directions and guidelines.
 
-* Configuration
+### Note
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Log in with username "abc" / password "abc" to access an account with a small album collection already built. This allows for an idea of how the application works without having to build an album collection from scratch.
