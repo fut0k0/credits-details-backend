@@ -1,8 +1,10 @@
 class Api::V1::ProducersController < ApplicationController
+# return all producers
 	def index
 		render json: Producer.all
 	end
 
+# create producer, return producer or error message
 	def create
 		producer = Producer.create(producer_params)
 

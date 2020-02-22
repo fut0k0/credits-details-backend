@@ -1,8 +1,10 @@
 class Api::V1::AlbumsController < ApplicationController
+# return all albums
 	def index
 		render json: Album.all
 	end
 
+# create album, return album or error message
 	def create
 		album = Album.create(album_params)
 
@@ -13,6 +15,7 @@ class Api::V1::AlbumsController < ApplicationController
 		end
 	end
 
+# delete album
 	def destroy
 		Album.find(params[:id]).destroy
 		render json: {message: "Album deleted"}

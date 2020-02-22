@@ -1,8 +1,10 @@
 class Api::V1::MixersController < ApplicationController
+# return all mixers
 	def index
 		render json: Mixer.all
 	end
 
+# create mixer, return mixer or error message
 	def create
 		mixer = Mixer.create(mixer_params)
 

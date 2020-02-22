@@ -1,8 +1,10 @@
 class Api::V1::YearsController < ApplicationController
+# return all years
 	def index
 		render json: Year.all
 	end
 
+# create year, return year or error message
 	def create
 		year = Year.create(year_params)
 

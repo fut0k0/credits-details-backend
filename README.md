@@ -15,7 +15,7 @@ Some basic requirements for the project included:
 
 ## Gems & Versions
 
-The back end was made using:
+The back end was made with `rails new --api` using:
 
 * ruby 2.6.1
 * rails 5.2.4

@@ -1,8 +1,10 @@
 class Api::V1::GenresController < ApplicationController
+# return all genres
 	def index
 		render json: Genre.all
 	end
 
+# create genre, return genre or error message
 	def create
 		genre = Genre.create(genre_params)
 

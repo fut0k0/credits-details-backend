@@ -1,4 +1,5 @@
 class Api::V1::SessionsController < ApplicationController
+# set session data, return user or error message
 	def create
 		user = User.find_by(username: params[:session][:username])
 
@@ -12,11 +13,13 @@ class Api::V1::SessionsController < ApplicationController
 		end
 	end
 
+# delete session data, return message
 	def destroy
 		reset_session
 		render json: {message: "Account logged out"}
 	end
 
+# return current user or message
 	def get_current_user
 		if is_logged_in
 			render json: current_user

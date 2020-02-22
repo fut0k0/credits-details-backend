@@ -1,8 +1,10 @@
 class Api::V1::EngineersController < ApplicationController
+# return all engineers
 	def index
 		render json: Engineer.all
 	end
 
+# create engineer, return engineer or error message
 	def create
 		engineer = Engineer.create(engineer_params)
 

@@ -1,8 +1,10 @@
 class Api::V1::ArtistsController < ApplicationController
+# return all artists
 	def index
 		render json: Artist.all
 	end
 
+# create artist, return artist or error message
 	def create
 		artist = Artist.create(artist_params)
 

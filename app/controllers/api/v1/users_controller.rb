@@ -1,8 +1,10 @@
 class Api::V1::UsersController < ApplicationController
+# return all users
 	def index
 		render json: User.all
 	end
 
+# create user & set session data, return user or error message
 	def create
 		user = User.create(user_params)
 

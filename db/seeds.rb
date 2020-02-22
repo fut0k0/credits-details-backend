@@ -1,10 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# create seed data
 
 u1 = User.create(username: "abc", password: "abc")
 u2 = User.create(username: "sue", password: "sue")
@@ -94,11 +88,11 @@ a5 = Album.create(title: "Badmotorfinger", format: "vinyl", user_id: 1, year_id:
 a6 = Album.create(title: "Gish", format: "disc", user_id: 2, year_id: 3, genre_id: 5, artist_id: 5, producer_id: 4, mixer_id: 2, engineer_id: 1)
 a7 = Album.create(title: "Doolittle", format: "disc", user_id: 2, year_id: 4, genre_id: 3, artist_id: 2, producer_id: 3, mixer_id: 5, engineer_id: 4)
 a8 = Album.create(title: "Surfer Rosa", format: "vinyl", user_id: 2, year_id: 5, genre_id: 3, artist_id: 2, producer_id: 6, mixer_id: 2, engineer_id: 5)
-a9 =  Album.create(title: "Mudhoney", format: "disc", user_id: 2, year_id: 4, genre_id: 4, artist_id: 6, producer_id: 7, mixer_id: 2, engineer_id: 6)
-a10 =  Album.create(title: "Eternal Return", format: "disc", user_id: 2, year_id: 6, genre_id: 6, artist_id: 7, producer_id: 8, mixer_id: 6, engineer_id: 6)
-a11 =  Album.create(title: "Ringleader Of The Tormentors", format: "disc", user_id: 1, year_id: 7, genre_id: 1, artist_id: 8, producer_id: 1, mixer_id: 1, engineer_id: 7)
-a12 =  Album.create(title: "You Are The Quarry", format: "disc", user_id: 1, year_id: 8, genre_id: 1, artist_id: 8, producer_id: 9, mixer_id: 7, engineer_id: 8)
-a13 =  Album.create(title: "Years Of Refusal", format: "disc", user_id: 1, year_id: 9, genre_id: 1, artist_id: 8, producer_id: 9, mixer_id: 2, engineer_id: 9)
+a9 =	Album.create(title: "Mudhoney", format: "disc", user_id: 2, year_id: 4, genre_id: 4, artist_id: 6, producer_id: 7, mixer_id: 2, engineer_id: 6)
+a10 =	 Album.create(title: "Eternal Return", format: "disc", user_id: 2, year_id: 6, genre_id: 6, artist_id: 7, producer_id: 8, mixer_id: 6, engineer_id: 6)
+a11 =	 Album.create(title: "Ringleader Of The Tormentors", format: "disc", user_id: 1, year_id: 7, genre_id: 1, artist_id: 8, producer_id: 1, mixer_id: 1, engineer_id: 7)
+a12 =	 Album.create(title: "You Are The Quarry", format: "disc", user_id: 1, year_id: 8, genre_id: 1, artist_id: 8, producer_id: 9, mixer_id: 7, engineer_id: 8)
+a13 =	 Album.create(title: "Years Of Refusal", format: "disc", user_id: 1, year_id: 9, genre_id: 1, artist_id: 8, producer_id: 9, mixer_id: 2, engineer_id: 9)
 a14 = Album.create(title: "Gish", format: "disc", user_id: 1, year_id: 3, genre_id: 5, artist_id: 5, producer_id: 4, mixer_id: 2, engineer_id: 1)
 a15 = Album.create(title: "Siamese Dream", format: "digital", user_id: 1, year_id: 10, genre_id: 1, artist_id: 5, producer_id: 4, mixer_id: 8, engineer_id: 10)
 a16 = Album.create(title: "Lodger", format: "digital", user_id: 1, year_id: 11, genre_id: 1, artist_id: 1, producer_id: 1, mixer_id: 1, engineer_id: 11)
